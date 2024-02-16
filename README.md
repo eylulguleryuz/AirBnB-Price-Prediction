@@ -17,15 +17,23 @@ In the second part, an Artificial Neural Network model was created and trained t
 A 10-fold cross-validation method was applied to determine the average performance of the model.
 ```
 
-Initial architecture of ANN was as follows:
+The initial architecture of ANN was as follows:
+
 ![image](https://github.com/eylulguleryuz/AirBnB-Price-Prediction/assets/20710032/7140820a-d787-4950-ae84-8db8219d488d)
 
-And finally, some measures were taken to increase the average performance of the model. These measures included:
+Some measures were taken to increase the average performance of the model. These measures included:
 ```
 Changing learning rate
 Changing activation function
 Changing ANN structure
 ```
-And the results are as follows:
+The results are as follows:
+
 ![image](https://github.com/eylulguleryuz/AirBnB-Price-Prediction/assets/20710032/0d8fe469-9f85-4cd0-ad0a-f6e83983e758)
+
+To make achieve the best performance, grid search was used with different sets of these parameters. 
+```
+The best parameters are found to be the activation function: ‘relu’, a hidden layer size of 5, a learning rate of 0.2. 
+These parameters applied; 10-fold cross-validation averaged performance is 99.54%.
+```
 
